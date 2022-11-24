@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="project.css"/>
+    <style>
+        .home-page{
+           display:grid;
+           grid-template-columns:300px auto;
+           grid-template-rows: 100vh;
+           margin:0px;
+           border-style: groove;
+           border-color: rgb(233, 238, 234);
+           background-size: cover;
+           border-radius:10px;
+           width:100vw;
+
+        }
+        
+        .child-a{
+            background-image:linear-gradient(rgb(185, 121, 121),rgb(238, 238, 116),rgb(35, 139, 108));
+        }
+        .child-b{
+            background-image:linear-gradient( rgb(139, 131, 131),rgb(117, 117, 89),rgb(70, 57, 30));
+            grid-column:2/3;
+            grid-row: 1/2;
+    
+        }
+        .extra{
+            margin:20px;
+        
+            
+
+            
+        }
+        .font{
+            font-size:1em;
+            font-weight:bold;
+            font-style: "roboto";
+            
+        }
+        .sub-part{
+            height:28%;
+            width:90%;
+            background-color: rgba(68, 73, 61, 0.945);
+            margin:0px 20px 10px 20px;
+            display:flex;
+            padding:10px;
+            border-style:solid;
+            border-color: rgb(105, 105, 37);
+           
+        }
+        .border{
+            border-radius: 10px;
+            border-color:rgb(119, 119, 36);
+            border-style: solid;
+            height:30px;
+            width: 20vw;
+            
+        }
+       
+        .ss{
+            margin-left:10%;
+        }
+        .ss1{
+            margin-left:10%;
+        }
+        .btn{
+           display:grid;
+           grid-template-columns:100px 100px 100px; 
+           grid-template-columns: 130px 130px 130px;
+           margin:20px;
+        }
+        .btn1{
+           background-color: rgb(32, 228, 14); 
+           color:white;
+           border-width: 0px;
+           border-radius: 5px;
+           padding:10px;
+           
+        }
+        .btn2{
+            background-color: rgb(248, 161, 0);
+            color:white;
+            border-width: 0px;
+            border-radius: 5px;
+            padding: 10px;
+            margin-left:10px;
+        }
+        .btn3{
+            background-color: rgb(10, 175, 240);
+            color:white;
+            border-radius: 5px;
+            border-width: 0px;
+            padding: 10px;
+            margin-left:10px;
+        }
+        button:hover{
+            border-color: rgba(119, 243, 3, 0.247);
+            background-color: blueviolet;
+        }
+        input:hover{
+            border-color: rgb(171, 114, 224);
+        }
+        ::selection{
+            background-color: rgb(42, 165, 114);
+            color:black;
+        }
+        .extra:hover{
+            background-color: rgb(50, 201, 168);
+            color:bisque;
+            
+            border-radius: 7px;
+            border-style: solid;
+            border-color:aquamarine;
+            padding:7px;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="home-page ">
+            <div class="child-a">
+              <ul >
+                <li type="none" class="extra font">Home</li>
+                <li type="none" class="extra font">All Scenarios</li>
+                <li type="none" class="extra font">All Scenarios</li>
+                <li type="none" class="extra font">add vechicle</li>
+                </ul>
+            </div>
+            <div class="child-b">
+                <div><h3 style="margin:20px; color:rgba(245, 223, 223, 0.973);">Scenario/add</h3> </div>
+                <div> <h4 style="margin:50px  0px 10px 20px; color:rgb(255, 255, 255) ;">Add Scenario</h4></div>
+                <div class="sub-part">
+                       <div class="a ss">
+                            <ul>
+                                <li type="none" > <h5 style="color: white;">Scenario Name</h5> </li>
+                                <li type="none" > <input class="border" style="background-color:black; color: white; "></input></li>
+                            </ul>
+                       </div>  
+
+                       <div class="b ss1">
+                          <ul>
+                             <li type="none"></li><h5 style="color: white;">scenario Time(seconds)</h5></li>
+                             <li type="none"></li><input class="border" style="background-color:black; color: white;"></input></li>
+                          </ul>
+                       </div>  
+
+                </div>
+                <div class="btn">
+                    <button class="btn1">Add</button>
+                    <button class="btn2">Reset</button>
+                    <button class="btn3">Go Back</button>
+                </div>
+            </div>
+    </div>
+</body>
+</html>

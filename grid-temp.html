@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .s{
+            display:grid;
+            gap:10px 10px;
+            grid-template-rows:10vh 30vh 10vh;
+            grid-template-columns:1fr 0.5fr 1fr 1.5fr;
+            align-content: center;
+            height:100vh;
+            border-color:red;
+            border-style: solid;
+            margin:20px 10px;
+            border-radius: 10px;
+
+        }
+        .box{
+            background-color: aqua;
+            border-radius: 10px;
+            text-align:center;
+            padding:10px;
+            border-style: solid;
+            border-color:yellow ;
+        }
+        .a{
+            grid-row:1/2;
+            grid-column:2/5;
+        }
+        .b{
+            grid-row:2/3;
+            grid-column:1/2;
+      }
+      .c{
+        grid-row:2/3; 
+        grid-column:2/5; 
+      }
+    .d{
+        grid-row: 3/4;
+        grid-column:1/5 ;
+    }
+    </style>
+</head>
+<body>
+    <div class="s">
+        <div class="box a">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti qui reprehenderit totam id at incidunt modi quam vitae amet distinctio repellendus consequuntur, ex quis neque vero repudiandae autem, tempora harum.</div>
+        <div class="box b">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti qui reprehenderit totam id at incidunt modi quam vitae amet distinctio repellendus consequuntur, ex quis neque vero repudiandae autem, tempora harum.</div>
+        <div class="box c">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti qui reprehenderit totam id at incidunt modi quam vitae amet distinctio repellendus consequuntur, ex quis neque vero repudiandae autem, tempora harum.</div>
+        <div class="box d">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti qui reprehenderit totam id at incidunt modi quam vitae amet distinctio repellendus consequuntur, ex quis neque vero repudiandae autem, tempora harum.</div>
+        
+      </div>
+</body>
+</html>
